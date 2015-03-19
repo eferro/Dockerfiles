@@ -7,4 +7,4 @@ The workdir is set to `/download` os if you want to get the output in your curre
 
 Use:
 
-docker run -v $(pwd):/download eferro/youtubedl -f <url>
+docker run --rm -v $(pwd):/download eferro/youtubedl -f <url>

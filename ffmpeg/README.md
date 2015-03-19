@@ -9,4 +9,4 @@ The workdir is set to /download os if you want to get the output in your current
 
 Use example:
 
-docker run -v $(pwd):/download eferro/ffmpeg -i video.mp4 video.mp3
+docker run --rm -v $(pwd):/download eferro/ffmpeg -i video.mp4 video.mp3
