@@ -1,0 +1,9 @@
+#!/bin/bash
+
+xhost +
+docker run \
+    --rm \
+    -e DISPLAY=$DISPLAY \
+    -e HOME=/home/freemind \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -ti freemind freemind
