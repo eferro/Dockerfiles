@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-ENV REFRESEHED_AT 2014-09-15
+ENV REFRESHED_AT 2015-04-08
 
 MAINTAINER Eduardo Ferro Aldama <eduardo.ferro.aldama@gmail.com>
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
