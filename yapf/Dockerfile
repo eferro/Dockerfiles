@@ -7,4 +7,4 @@ RUN mkdir /data
 WORKDIR /data
 
 ADD yapf.sh /
-RUN chmod 775 yapf.sh
+RUN chmod 775 /yapf.sh
