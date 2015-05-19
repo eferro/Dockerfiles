@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="webcarousel.css">
+</head>
+<body>
+	<iframe id="myiframe"  width="768" height="1024" src="http://www.alea-soluciones.com"></iframe>
+</body>
+
+<script>
+var urls = ['http://www.alea-soluciones.com', 'http://microsoft.com', 'http://elpais.es'], i = 0;
+
+setInterval(function() {
+    document.getElementById('myiframe').src = urls[i];        
+    urls.length == i ? i = 0 : i++;
+}, 7000);
+</script>
+</html>
