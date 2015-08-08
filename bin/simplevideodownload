@@ -1,0 +1,2 @@
+docker run -v $(pwd):/download eferro/simplevideodownload  --uid $(id -u) --gid $(id -g) $*
+
