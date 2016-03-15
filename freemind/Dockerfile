@@ -8,7 +8,6 @@ RUN wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add
 RUN sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
 RUN apt-get update && apt-get  -y -q install freemind
 
-VOLUMEN /data
+VOLUME /data
 ADD freemind.sh /
 RUN chmod 775 freemind.sh
-
